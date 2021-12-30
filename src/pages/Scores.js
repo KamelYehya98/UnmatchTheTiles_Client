@@ -42,7 +42,7 @@ function Scores() {
         console.log(col);
         console.log(row);
 
-        await Axios.post("http://localhost:3001/getScores", {col:col, row:row} ).then((res)=>{
+        await Axios.post("https://unmatch-the-tiles.herokuapp.com/getScores", {col:col, row:row} ).then((res)=>{
             setTable(true); setEmpty(false);
             const table = document.getElementById('scores_table');
 

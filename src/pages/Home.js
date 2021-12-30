@@ -27,7 +27,7 @@ function Home() {
     async function sendData(log){
         console.log("LOOOOG IS: " + log);
         if(log === false){
-            await Axios.post("http://localhost:3001/add", {
+            await Axios.post("https://unmatch-the-tiles.herokuapp.com/add", {
                 row: M.height,
                 col: M.width, 
                 moves,
@@ -43,7 +43,7 @@ function Home() {
                 }
             });
         }else{
-            await Axios.post("http://localhost:3001/save", {
+            await Axios.post("https://unmatch-the-tiles.herokuapp.com/save", {
                 row: M.height,
                 col: M.width, 
                 moves,
